@@ -21,5 +21,5 @@ Route::get('/comics', function () {
     $comics = config('comics.list');
     //dd($comics);
     //$comicsCollection = collect($comics);
-    return view('comics', $comics);
+    return view('comics', compact('comics')); // ['comics' => $comics]
 })->name('comics');

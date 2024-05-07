@@ -4,14 +4,12 @@
 
 @section('content')
     <div class="container">
-        @foreach ($comics as $key => $comicsType)
-        @endforeach
+
         <h1>List</h1>
-        <ul>
-            @foreach ($comicsType as $comic)
+        <ul class="list-unstyled">
+            @foreach ($comics as $comic)
                 <li>
                     <h2>{{ $comic['title'] }}</h2>
-                    <p>{{ $comic['description'] }}</p>
                     <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                     <p> {{ $comic['price'] }}</p>
                     <p> {{ $comic['series'] }}</p>
