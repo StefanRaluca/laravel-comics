@@ -17,16 +17,18 @@
 
 <body>
 
-    <header>
-        @include('partials.header')
-    </header>
+
+    @include('partials.header')
+
     <main>
-        <div class="jumbotron"></div>
+        <div class="jumbotron">
+        </div>
         @yield('content')
+
     </main>
-    <footer>
-        @include('partials.footer')
-    </footer>
+
+    @include('partials.footer')
+
 
 </body>
 

@@ -1,0 +1,25 @@
+footer {
+    background-image: url('../img/footer-bg.jpg');
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 65%;
+        height: 100%;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    p {
+        color: white;
+        width: 60%;
+    }
+}
