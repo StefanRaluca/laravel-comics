@@ -4,19 +4,14 @@
 
 @section('content')
     <div class="container">
-
-        <h1>List</h1>
-        <ul class="list-unstyled">
+        <h1 class="text-white text-center mb-3">Current Series</h1>
+        <div class="row">
             @foreach ($comics as $comic)
-                <li>
-                    <h2>{{ $comic['title'] }}</h2>
-                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                    <p> {{ $comic['price'] }}</p>
-                    <p> {{ $comic['series'] }}</p>
-                    <p> {{ $comic['sale_date'] }}</p>
-                    <p>{{ $comic['type'] }}</p>
-                </li>
+                <div class="col-md-2 mb-4 ">
+                    <div class="card  border border-0 rounded-0 bg-dark">
+                        <img src="{{ $comic['thumb'] }}" class="card-img-top" alt="{{ $comic['title'] }}">
+                        <h6 class="text-center text-white">{{ $comic['title'] }}</h6>
+                    </div>
+                </div>
             @endforeach
-        </ul>
-    </div>
-@endsection
+        @endsection

@@ -1,1 +1,34 @@
 @import '~bootstrap/scss/bootstrap';
+
+.active_page {
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+
+
+}
+
+.jumbotron {
+    background-image: url('../img/jumbotron.jpg');
+    height: 400px;
+
+}
+
+main {
+    background-color: black;
+}
+
+
+footer {
+    background-image: url('../img/footer-bg.jpg');
+    height: 250px;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 65%;
+        height: 100%;
+    }
+
+}
