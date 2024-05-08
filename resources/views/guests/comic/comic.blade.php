@@ -19,6 +19,6 @@
                 </div>
             </div>
         </div>
-        <a href="/comics" class="btn btn-outline-success mx-auto my-4 btn_back">Back</a>
+        <a href="/comics" class="btn btn-outline-primary mx-auto my-4 btn_back">Back</a>
     </div>
 @endsection
