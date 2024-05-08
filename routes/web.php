@@ -28,5 +28,5 @@ Route::get('/comics', function () {
 Route::get('/comics/{id}', function ($id) {
     abort_unless($id >= 0 && count(config('comics.list')), 404);
     $comic = config('comics.list')[$id];
-    return view('comics', compact('comic'));
+    return view('comic', compact('comic'));
 })->name('comic.show');
