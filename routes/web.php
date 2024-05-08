@@ -23,3 +23,10 @@ Route::get('/comics', function () {
     //$comicsCollection = collect($comics);
     return view('comics', compact('comics')); // ['comics' => $comics]
 })->name('comics');
+
+
+Route::get('/comics/{id}', function ($id) {
+    abort_unless($id >= 0 && count(config('comics.list')), 404);
+    $comic = config('comics.list')[$id];
+    return view('comics', compact('comic'));
+})->name('comic.show');
