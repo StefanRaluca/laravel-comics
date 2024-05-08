@@ -17,8 +17,8 @@
                     href="{{ route('comics') }}" aria-current="page" href="/comics">Comics</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ Route::currentRouteName() === '/' ? 'active_page' : '' }}"
-                    href="{{ route('comics') }}" aria-current="page" href="/">Movies</a>
+                <a class="nav-link {{ Route::currentRouteName() === 'movies' ? 'active_page' : '' }}"
+                    href="{{ route('movies') }}" aria-current="page" href="/movies">Movies</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Route::currentRouteName() === '/' ? 'active_page' : '' }}"

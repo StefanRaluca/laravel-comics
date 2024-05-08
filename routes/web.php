@@ -21,7 +21,7 @@ Route::get('/comics', function () {
     $comics = config('comics.list');
     //dd($comics);
     //$comicsCollection = collect($comics);
-    return view('comics', compact('comics')); // ['comics' => $comics]
+    return view('guests.comics.index', compact('comics')); // ['comics' => $comics]
 })->name('comics');
 
 
@@ -30,3 +30,7 @@ Route::get('/comics/{id}', function ($id) {
     $comic = config('comics.list')[$id];
     return view('comic', compact('comic'));
 })->name('comic.show');
+
+Route::get('/movies', function () {
+    return view('guests.movies.movie');
+})->name('movies');
